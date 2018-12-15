@@ -1,0 +1,42 @@
+.content
+    display: flex
+    flex-direction: row
+    box-sizing: border-box
+    padding: 3em
+    background: none
+    box-shadow: none
+    @media screen and (max-width: 800px)
+        flex-direction: column
+
+    .left, .right
+        height: auto
+        width: 50%
+        flex-direction: column
+        align-items: center
+
+    .card
+        display: flex
+        margin-bottom: 4em
+        width: 15em
+        height: 15em
+        background-color: transparentize(#111, 0.2)
+        box-shadow: 0 1em 8em black
+        transition: 0.5s width ease
+        align-items: center
+        overflow: hidden
+        border-radius: 1em
+
+        @media screen and (max-width: 800px)
+            width: 80vw
+            flex-direction: column
+            height: auto
+
+        &:last-child
+            margin-bottom: 4em
+        
+        .img
+            height: 100%
+            width: auto
+            img
+                height: 100%
+                width: auto

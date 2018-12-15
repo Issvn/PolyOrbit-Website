@@ -1,0 +1,38 @@
+body
+    background-image: linear-gradient(to bottom right, #ff44eb, #01b2ff)
+    width: 100vw
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow-x: hidden
+
+    
+.content
+    width: 90%
+    height: auto
+    min-height: 25em
+    margin-top: 10em
+    background-color: #222
+    box-shadow: 0 1em 8em black
+    border-radius: 1em
+
+    @media screen and (max-width: 800px)
+        margin-top: 7em
+
+    div
+        width: 100%
+        min-width: 5em
+        display: flex
+
+    
+@media all and (-ms-high-contrast:none)
+    body
+        display: block
+        .navbar
+            width: 100%
+        .content
+            width: 100%
+            // margin-top: 0
+        .footer
+            width: 100%

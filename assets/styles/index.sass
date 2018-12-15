@@ -1,0 +1,164 @@
+
+.news
+    border-top-left-radius: 1em
+    border-top-right-radius: 1em
+    height: 30em
+    background-image: url('../img/exoly/1.png')
+    background-position: center
+    background-size: 150%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    @media screen and (max-width: 800px)
+        height: 20em
+        background-size: 200%
+
+    h1
+        text-align: center
+        font-size: 8em
+        font-family: SpaceMono
+        @media screen and (max-width: 800px)
+            font-size: 6em
+        @media screen and (max-width: 360px)
+            font-size: 5em
+    
+    button
+        width: 10em
+        height: 2em
+        border: 2px solid white
+        background: transparentize(black, 0.5)
+        font-family: SpaceMono
+        font-size: 1.5em
+        color: white
+        transition: 0.5s all
+
+        &:hover
+            background: white
+            color: #222
+            cursor: pointer
+
+.presentation
+    background-color: transparentize(white, 0.97)
+    height: auto
+    justify-content: space-around
+    div
+        width: 40%
+        height: 100%
+        color: white
+        font-family: Montserrat
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        margin: 3em 0
+        @media screen and (max-width: 800px)
+            display: none
+        
+        &.trad
+            display: none
+            @media screen and (max-width: 800px)
+                display: block
+                width: 80%
+        // &.fr
+        //     background-color: transparentize(red, 0.8)
+        // &.en
+        //     background-color: transparentize(green, 0.8)
+        h1
+            font-size: 2em
+            margin-bottom: 1em
+        h2
+            font-size: 1.3em
+            text-align: justify
+        span
+            font-weight: 600
+
+.partners
+    justify-content: center
+    padding: 1em 0
+    position: relative
+
+    @media screen and (max-width: 800px)
+        flex-direction: column
+        align-items: center
+    
+    #title
+        width: 100%
+        text-align: center
+        position: absolute
+        color: white
+        top: 2em
+        justify-content: center
+
+        h1
+            font-family: MarketDeco
+            font-size: 3em
+
+        &::after
+            content: ""
+            position: absolute
+            height: 0
+            border-bottom: 1px solid white
+            border-top: 1px solid white
+            border-radius: 1em
+            top: 3em
+            left: 45%
+            width: 10%
+    
+    .card
+        margin-top: 6em
+        margin-bottom: 3em
+        position: relative
+        flex-direction: column
+        border-radius: 1em
+        width: 18em
+        height: 20em
+        color: white
+        transition: 0.2s all
+        @media screen and (max-width: 800px)
+            margin: 0
+            margin-bottom: 2em
+        @media screen and (max-width: 320px)
+            width: 80%
+
+        &:hover
+            transform: scale(1.01)
+            cursor: pointer
+
+        h1
+            width: 100%
+            position: absolute
+            text-align: center
+            vertical-align: middle
+            font-family: MarketDeco
+            font-size: 1.5em
+            top: 0.5em
+
+        p
+            position: absolute
+            -moz-box-sizing: border-box
+            -webkit-box-sizing: border-box
+            box-sizing: border-box
+            text-align: justify 
+            top: 3em
+            width: 100%
+            height: 17em
+            font-family: Montserrat
+            padding: 1em
+            border-bottom-left-radius: 1em
+            border-bottom-right-radius: 1em
+            background-color: transparentize(black, 0.8)
+
+        &#steova
+            background-image: linear-gradient(to bottom right, #FCD13F, #8E28D9)
+            margin-right: 5em
+            @media screen and (max-width: 800px)
+                margin-right: 0
+                margin-top: 6em
+
+        &#novalife
+            background-image: linear-gradient(to bottom left, #6644F6, #2467AB)
+
+@keyframes noise-anim
+  @for $i from 0 through 20
+    #{percentage($i*(1/20))}
+      clip:rect(random(100)+px,9999px,random(100)+px,0)

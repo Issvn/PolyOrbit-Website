@@ -1,0 +1,79 @@
+.container
+  border-top-left-radius: 1em
+  border-top-right-radius: 1em
+  border-bottom-left-radius: 1em
+  border-bottom-right-radius: 1em
+  min-height: calc(100vh - 7em)
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -ms-flex-direction: row
+  flex-direction: row
+  -ms-flex-pack: distribute
+  justify-content: space-around
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  background-color: #222
+  div.gamec
+    height: 30em
+    width: 20em
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+    img
+      border-top-left-radius: 1em
+      border-top-right-radius: 1em
+      width: 100%
+      height: auto
+    p
+      width: 80%
+      color: white
+      font-family: Geo
+      font-size: 1.5em
+      text-align: justify
+    &#exoly
+      border-top-left-radius: 1em
+      border-top-right-radius: 1em
+      border-bottom-left-radius: 1em
+      border-bottom-right-radius: 1em
+      background-color: #004876
+      p
+        text-align: center
+      iframe
+        margin-top: 1em
+    &#spaced
+      border-top-left-radius: 1em
+      border-top-right-radius: 1em
+      border-bottom-left-radius: 1em
+      border-bottom-right-radius: 1em
+      background-color: black
+      p
+        font-family: Geo
+        font-size: 1em
+        line-height: 20px
+
+@media screen and (max-width: 960px)
+  .container div.gamec
+    margin-top: 2em
+    &:last-child
+      margin-bottom: 2em
+
+@media screen and (max-width: 640px)
+  .container div.gamec
+    margin-top: 0
+    &:last-child
+      margin-bottom: 0
