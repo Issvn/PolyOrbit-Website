@@ -26,8 +26,6 @@ body
     background-color: transparentize(white, 0.97)
     height: auto
     justify-content: space-around
-    border-bottom-left-radius: 1em
-    border-bottom-right-radius: 1em
     div
         width: 40%
         height: 100%
@@ -57,6 +55,31 @@ body
             text-align: justify
         span
             font-weight: 600
+
+.gallery
+    height: auto
+    justify-content: space-around
+    border-bottom-left-radius: 1em
+    border-bottom-right-radius: 1em
+    button
+        width: 25%
+        border-top-left-radius: 1em
+        border-top-right-radius: 1em
+        border-bottom-left-radius: 1em
+        border-bottom-right-radius: 1em
+        height: 3em
+        background: #303030
+        border: none
+        color: #ffffff
+        font-size: 1.5em
+        button-webkit-transition: all 0.5s
+        transition: all 0.5s
+        margin-top: 2em
+        margin-bottom: 2em 
+    button:hover
+        cursor: pointer
+        background: #ffffff
+        color: #303030
 
 @keyframes title-img-change
     0%
