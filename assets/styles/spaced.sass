@@ -17,16 +17,32 @@ body
 
     h1
         font-size: 8em
-        font-family: SpaceMono
+        font-family: Earthorbiter
+        @media screen and (max-width: 800px)
+            font-size: 6em
+        @media screen and (max-width: 360px)
+            font-size: 5em
 
 .player
     height: auto
     .gamejolt
         text-align: center
+        margin-top: 2.5em
+        margin-bottom: 2.5em
         display: table-cell
         vertical-align: middle
+        @media screen and (max-width: 800px)
+            margin-bottom: 0.25em
+            margin-top: 2.5em
+        @media screen and (max-width: 360px)
+            margin-top: 3.5em
+            margin-bottom: 0.25em 
         img 
             cursor: pointer
+            @media screen and (max-width: 800px)
+                height: 60%
+            @media screen and (max-width: 360px)
+                height: 50%
 
 .presentation
     background-color: transparentize(white, 0.97)

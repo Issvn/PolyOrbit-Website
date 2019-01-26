@@ -1,13 +1,19 @@
 .content
     display: flex
     flex-direction: row
+    flex-wrap: wrap
     box-sizing: border-box
+    overflow-x: hidden 
     padding: 3em
     background: none
     box-shadow: none
     @media screen and (max-width: 800px)
         flex-direction: column
         align-items: center
+    
+    @media screen and (min-width: 1920px)
+        margin-top: 14.25em
+        margin-bottom: 14.25em
 
     .left, .right
         height: auto
@@ -22,10 +28,14 @@
         height: 15em
         background-color: transparentize(#111, 0.2)
         box-shadow: 0 1em 8em black
-        transition: 0.5s width ease
+        transition: all 0.5s
         align-items: center
         overflow: hidden
         border-radius: 1em
+        @media screen and (max-width: 640px)
+            width: 10em
+            height: 10em
+        
 
         &:last-child
             margin-bottom: 4em
@@ -36,3 +46,6 @@
             img
                 height: 100%
                 width: auto
+        &:hover
+            transition: all 0.5s
+            transform: scale(1.1)

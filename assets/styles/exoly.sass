@@ -17,10 +17,11 @@ body
 
     h1
         font-size: 8em
-        font-family: SpaceMono
-
-.player
-    height: auto
+        font-family: Earthorbiter
+        @media screen and (max-width: 800px)
+            font-size: 6em
+        @media screen and (max-width: 360px)
+            font-size: 5em
 
 .presentation
     background-color: transparentize(white, 0.97)
@@ -59,10 +60,67 @@ body
 .gallery
     height: auto
     justify-content: space-around
+    button
+        width: 50%
+        border-top-left-radius: 1em
+        border-top-right-radius: 1em
+        border-bottom-left-radius: 1em
+        border-bottom-right-radius: 1em
+        height: 3em
+        background: #303030
+        border: none
+        color: #ffffff
+        font-size: 1.5em
+        button-webkit-transition: all 0.5s
+        transition: all 0.5s
+        margin-top: 2em
+        margin-bottom: 2em 
+    button:hover
+        cursor: pointer
+        background: #ffffff
+        color: #303030
+
+.story
+    background-color: transparentize(white, 0.97)
+    height: auto
+    justify-content: space-around
     border-bottom-left-radius: 1em
     border-bottom-right-radius: 1em
+    div
+        width: 40%
+        height: 100%
+        color: white
+        font-family: Montserrat
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        margin: 3em 0
+        @media screen and (max-width: 800px)
+            display: none
+        
+        &.trad
+            display: none
+            @media screen and (max-width: 800px)
+                display: block
+                width: 80%
+        // &.fr
+        //     background-color: transparentize(red, 0.8)
+        // &.en
+        //     background-color: transparentize(green, 0.8)
+        h1
+            font-size: 2em
+            margin-bottom: 1em
+        h2
+            font-size: 1.3em
+            text-align: justify
+        span
+            font-weight: 600
+            
+.steam
+    height: auto
+    justify-content: space-around
     button
-        width: 25%
+        width: 50%
         border-top-left-radius: 1em
         border-top-right-radius: 1em
         border-bottom-left-radius: 1em

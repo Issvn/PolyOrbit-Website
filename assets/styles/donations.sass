@@ -1,0 +1,82 @@
+
+.title
+    border-top-left-radius: 1em
+    border-top-right-radius: 1em
+    height: 30em
+    background-image: url('../img/exoly/ExoScreenShotX9.png')
+    background-position: center
+    background-size: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    @media screen and (max-width: 800px)
+        height: 20em
+        background-size: 200%
+
+    h1
+        text-align: center
+        font-size: 8em
+        font-family: Earthorbiter
+        @media screen and (max-width: 800px)
+            font-size: 6em
+        @media screen and (max-width: 360px)
+            font-size: 5em
+
+.video
+    height: auto
+
+.text
+    background-color: transparentize(white, 0.97)
+    height: auto
+    justify-content: space-around
+    div
+        width: 90%
+        height: 50%
+        color: white
+        font-family: Montserrat
+        display: block
+        flex-direction: column
+        justify-content: flex-start
+        margin: 3em 0
+        @media screen and (max-width: 800px)
+            display: none
+
+        h1
+            font-size: 2em
+            margin-bottom: 1em
+            text-align: center
+        h2
+            font-size: 1.3em
+            text-align: center
+        h3
+            font-size: 1em
+            margin-top: 1em
+            text-align: center
+        span
+            font-weight: 600
+
+.paypal-button
+    height: auto
+    text-align: center
+    button
+        width: 20%
+        border-top-left-radius: 1em
+        border-top-right-radius: 1em
+        border-bottom-left-radius: 1em
+        border-bottom-right-radius: 1em
+        height: 2em
+        background: #303030
+        border: none
+        color: #ffffff
+        margin: auto
+        display: block
+        font-size: 1.5em
+        button-webkit-transition: all 0.5s
+        transition: all 0.5s
+        margin-top: 1em
+        margin-bottom: 1em 
+    button:hover
+        cursor: pointer
+        background: #ffffff
+        color: #303030
