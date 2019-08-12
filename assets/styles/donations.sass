@@ -2,8 +2,8 @@
 .title
     border-top-left-radius: 1em
     border-top-right-radius: 1em
-    height: 30em
-    background-image: url('../img/exoly/ExoScreenShotX9.png')
+    height: 35em
+    background-image: url('../img/exoly/ScreenShotExoly340192.png')
     background-position: center
     background-size: 100%
     flex-direction: column
@@ -17,14 +17,18 @@
     h1
         text-align: center
         font-size: 8em
+        color: white
         font-family: Earthorbiter
         @media screen and (max-width: 800px)
-            font-size: 6em
+            font-size: 4em
         @media screen and (max-width: 360px)
-            font-size: 5em
+            font-size: 3em
 
 .video
     height: auto
+    iframe
+        width: 100%
+        position: relative
 
 .text
     background-color: transparentize(white, 0.97)
@@ -75,7 +79,14 @@
         button-webkit-transition: all 0.5s
         transition: all 0.5s
         margin-top: 1em
-        margin-bottom: 1em 
+        margin-bottom: 1em
+        outline: 0
+        @media screen and (max-width: 320px)
+            height: 3em
+            width: 45%
+        @media screen and (max-width: 800px)
+            height: 3.5em
+            width: 55%
     button:hover
         cursor: pointer
         background: #ffffff

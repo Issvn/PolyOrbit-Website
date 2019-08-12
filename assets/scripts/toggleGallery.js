@@ -16,76 +16,46 @@ var toggleGallery = function () {
             title: 'The character and the WhiteBird spacecraft'
         },
         {
-            src: 'assets/img/exoly/ExoLandPad4.png',
-            w: 841,
-            h: 474,
-            title: "The station as a whole"
-        },
-        {
-            src: 'assets/img/exoly/ExoLandPad3.png',
-            w: 1280,
-            h: 720,
-            title: "The space station's landing pods"
-        },
-        {
             src: 'assets/img/exoly/ExoLandPadScreen1.png',
             w: 1280,
             h: 720,
-            title: "Landing pods from another angle"
+            title: "The Whitebird parked at the station"
         },
         {
-            src: 'assets/img/exoly/ExoLandPadScreen2.png',
-            w: 1280,
-            h: 720,
-            title: "An exonaut in front of one of the doors"
+            src: 'assets/img/exoly/ScreenShotExoly340192.png',
+            w: 2820,
+            h: 1762,
+            title: "Two Exonauts running to their Whitebird"
         },
         {
-            src: 'assets/img/exoly/ExoScreenNvPerso1.png',
-            w: 1026,
-            h: 433,
-            title: "Women also have their place in this universe"
+            src: 'assets/img/exoly/ScreenShotExoly2097509.png',
+            w: 2820,
+            h: 1762,
+            title: "An Exonaut observing the beauty of the landscape"
         },
         {
-            src: 'assets/img/exoly/ExoScreenShotX1.png',
-            w: 1280,
-            h: 720,
-            title: "The challenger flying over Eclypsia"
+            src: 'assets/img/exoly/ScreenShotExoly3389932.png',
+            w: 2820,
+            h: 1762,
+            title: "Two Exonauts contemplating the beauty of space"
         },
         {
-            src: 'assets/img/exoly/ExoScreenShotX2.png',
-            w: 1280,
-            h: 720,
-            title: "The challenger flying over the lobby"
+            src: 'assets/img/exoly/ScreenShotExoly2096155.png',
+            w: 3132,
+            h: 1762,
+            title: "An Exonaut lost in NoreD32"
         },
         {
-            src: 'assets/img/exoly/ExoScreenShotX4.png',
-            w: 1280,
-            h: 720,
-            title: "the station seen from behind"
+            src: 'assets/img/exoly/ScreenShotExoly1082156.png',
+            w: 3132,
+            h: 1762,
+            title: "Someone is building his base"
         },
         {
-            src: 'assets/img/exoly/ExoScreenShotX9.png',
-            w: 1280,
-            h: 720,
-            title: "An exonaut soon after getting off the challenger"
-        },
-        {
-            src: 'assets/img/exoly/ScreenShotExoly.jpg',
-            w: 2080,
-            h: 682,
-            title: "An exonaut ready for the fight !"
-        },
-        {
-            src: 'assets/img/exoly/ScreenShotExoly1_1.jpg',
-            w: 2560,
-            h: 900,
-            title: "An exonaut inspecting his WhiteBird"
-        },
-        {
-            src: 'assets/img/exoly/ScreenShotExoly2.jpg',
-            w: 2080,
-            h: 682,
-            title: "An exonaut in front of a sunset"
+            src: 'assets/img/exoly/ScreenShotExoly9620518.png',
+            w: 3132,
+            h: 1762,
+            title: "An Exonaut proud of his base" 
         }
     ];
 

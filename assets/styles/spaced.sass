@@ -6,10 +6,10 @@ body
     border-top-left-radius: 1em
     border-top-right-radius: 1em
     height: 30em
+    background-image: url('../img/spaced/1.png')
     background-clip: cover
-    background-attachment: fixed
     background-position: center
-    background-size: 150%
+    background-size: 100%
     flex-direction: column
     align-items: center
     justify-content: center
@@ -22,6 +22,12 @@ body
             font-size: 6em
         @media screen and (max-width: 360px)
             font-size: 5em
+
+.video
+    height: auto
+    iframe
+        width: 100%
+        position: relative
 
 .player
     height: auto
@@ -77,14 +83,6 @@ body
             text-align: justify
         span
             font-weight: 600
-
-@keyframes title-img-change
-    0%
-        background: rgba(0, 0, 0, 0) url("../img/spaced/1.png") no-repeat fixed center
-    50%
-        background: rgba(0, 0, 0, 0) url("../img/spaced/1.png") no-repeat fixed center
-    100%
-        background: rgba(0, 0, 0, 0) url("../img/spaced/1.png") no-repeat fixed center
 
 /* #region Star Background */
 body
