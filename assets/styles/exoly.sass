@@ -11,22 +11,29 @@ body
     border-top-left-radius: 0.5em
     border-top-right-radius: 0.5em
     height: 38em
-    background-clip: cover
+    background-repeat: no-repeat
     background-image: url('../img/exoly/Fog-Valley.png')
-    background-position: center
-    background-size: 100%
+    background-clip: cover;
+    background-position: center;
+    background-size: 150%;
     flex-direction: column 
     align-items: center
     justify-content: center
+    @media screen and (max-width: 800px)
+        height: 15em
+        background-size: 150%
+    @media screen and (max-width: 360px)
+        height: 20em
+        background-size: 250%
 
     h1
         font-size: 8em
         color: white
         font-family: Earthorbiter
         @media screen and (max-width: 800px)
-            font-size: 6em
-        @media screen and (max-width: 360px)
             font-size: 5em
+        @media screen and (max-width: 360px)
+            font-size: 4em
 
 .presentation
     background-color: transparentize(white, 0.97)
@@ -112,6 +119,10 @@ body
         margin-top: 2em
         margin-bottom: 2em
         outline: 0
+        @media screen and (max-width: 800px)
+            width: 60%
+        @media screen and (max-width: 360px)
+            width: 70%
     button:hover
         cursor: pointer
         background: #ffffff

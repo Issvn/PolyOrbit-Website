@@ -10,24 +10,30 @@ body
 .title
     height: 36em
     background-image: url('../img/spaced/1.png')
-    background-clip: cover
+    background-repeat:  no-repeat
+    background-clip: cover;
+    background-position: center;
+    background-size: 150%;
+    flex-direction: column 
+    align-items: center
+    justify-content: center
     color: white
     border-top-left-radius: 0.5em
     border-top-right-radius: 0.5em
-    background-position: center
-    background-size: 100%
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    animation: title-img-change 10s ease infinite
+    @media screen and (max-width: 800px)
+        height: 15em
+        background-size: 120%
+    @media screen and (max-width: 360px)
+        height: 20em
+        background-size: 180%
 
     h1
         font-size: 8em
         font-family: Earthorbiter
         @media screen and (max-width: 800px)
-            font-size: 6em
-        @media screen and (max-width: 360px)
             font-size: 5em
+        @media screen and (max-width: 360px)
+            font-size: 4em
 
 .video
     height: auto

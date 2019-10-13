@@ -121,12 +121,17 @@
 .presentation
     height: auto
     text-align: center
+    @media screen and (max-width: 800px)
+        height: 25em
+    @media screen and (max-width: 360px)
+        height: 25em
 
     .bg
         background-image: url('../img/exoly/fog-valley-3.png')
-        background-size: 100%
+        background-repeat: no-repeat
         background-attachment: fixed
-        background-position: top center
+        background-position: top center;
+        background-size: 100%;
 
     #logo-container
         .logo
@@ -141,6 +146,10 @@
     #jump
         height: 20em
         width: 100%
+        @media screen and (max-width: 800px)
+            height: 10em
+        @media screen and (max-width: 360px)
+            height: 9em
 
     #text-container
         .text
@@ -152,11 +161,13 @@
             word-spacing: -2px
             justify-content: space-around
             margin: 3em 0
-            @media screen and (max-width: 800px)
-                display: none
+            outline: 0
             @media screen and (max-width: 800px)
                 display: inline-block
-                width: 80%
+                width: 90%
+            @media screen and (max-width: 360px)
+                display: inline-block
+                width: 90%
             h2
                 font-size: 1.3em
                 text-align: justify
