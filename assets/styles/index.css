@@ -1,63 +1,89 @@
-.news {
+.head {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  height: 30em;
-  background-image: url("../img/exoly/1.png");
+  background-image: url("../img/plxplanets.png");
   background-position: center;
-  background-size: 150%;
+  background-size: 100%;
+  height: 38em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-perspective: 5px;
+          perspective: 5px;
+  position: relative;
+}
+
+.head .perso {
+  background-image: url("../img/plx.png");
+  height: 5em;
+  width: 5em;
+  top: 0;
 }
 
 @media screen and (max-width: 800px) {
-  .news {
+  .head {
     height: 20em;
     background-size: 200%;
   }
 }
 
-.news h1 {
-  text-align: center;
-  font-size: 8em;
+@media screen and (max-width: 1024px) {
+  .head {
+    background-size: 200%;
+  }
+}
+
+.head h1 {
+  margin-top: 1em;
+  margin-left: 1em;
+  text-align: left;
+  font-size: 5em;
+  color: #ffffff;
   font-family: Earthorbiter;
 }
 
 @media screen and (max-width: 800px) {
-  .news h1 {
-    font-size: 6em;
+  .head h1 {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .news h1 {
-    font-size: 5em;
+  .head h1 {
+    font-size: 3em;
   }
 }
 
-.news button {
-  width: 10em;
-  height: 2em;
-  border: 2px solid white;
-  background: rgba(0, 0, 0, 0.5);
-  font-family: SpaceMono;
-  font-size: 1.5em;
-  color: white;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+@media screen and (max-width: 1024px) {
+  .head h1 {
+    margin-left: 0.5em;
+    margin-top: 1em;
+  }
 }
 
-.news button:hover {
-  background: white;
-  color: #222;
-  cursor: pointer;
+.head h2 {
+  margin-top: 4.5em;
+  margin-left: 3.5em;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .head h2 {
+    margin-left: 0.5em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .head h2 {
+    margin-left: 0.5em;
+    font-size: 1em;
+  }
 }
 
 .presentation {
@@ -117,12 +143,121 @@
   font-weight: 600;
 }
 
+.exoly {
+  height: 40em;
+  background-image: url("../img/exoly/exonaut.png");
+  background-position: center;
+  background-size: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .exoly {
+    height: 20em;
+    background-size: 200%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .exoly {
+    background-size: 200%;
+  }
+}
+
+.exoly h1 {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 5em;
+  color: #ffffff;
+  font-family: Earthorbiter;
+}
+
+@media screen and (max-width: 800px) {
+  .exoly h1 {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .exoly h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .exoly h1 {
+    margin-left: 0.5em;
+    margin-top: 1em;
+  }
+}
+
+.exoly .review-1 {
+  text-align: left;
+  font-size: 25px;
+  margin-top: 6.5em;
+  margin-left: 3em;
+  color: white;
+  font-family: Montserrat;
+}
+
+.exoly .review-2 {
+  text-align: right;
+  font-size: 25px;
+  margin-top: -7.5em;
+  margin-right: 4em;
+  color: white;
+  font-family: Montserrat;
+}
+
+.exoly .review-3 {
+  text-align: right;
+  font-size: 25px;
+  margin-top: 11em;
+  margin-right: 6em;
+  color: white;
+  font-family: Montserrat;
+}
+
+.exoly button {
+  width: 10em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2em;
+  margin-top: 3em;
+  margin-left: 30em;
+  border: 2px solid white;
+  background: Transparent;
+  font-family: SpaceMono;
+  font-size: 1.5em;
+  color: white;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  outline: 0;
+}
+
+.exoly button:hover {
+  background: white;
+  color: #222;
+  cursor: pointer;
+}
+
 .partners {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1em 0;
-  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 25em;
 }
 
 @media screen and (max-width: 800px) {
@@ -137,32 +272,17 @@
   }
 }
 
-.partners #title {
+.partners .title {
   width: 100%;
-  text-align: center;
-  position: absolute;
   color: white;
-  top: 2em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.partners #title h1 {
-  font-family: MarketDeco;
-  font-size: 3em;
-}
-
-.partners #title::after {
-  content: "";
-  position: absolute;
-  height: 0;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-  border-radius: 1em;
-  top: 3em;
-  left: 45%;
-  width: 10%;
+.partners .title h1 {
+  font-family: Earthorbiter;
+  font-size: 5em;
+  margin-left: 1em;
+  margin-top: 1em;
+  text-align: left;
 }
 
 .partners .card {
@@ -223,18 +343,6 @@
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.partners .card#novalife {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#6644F6), to(#2467AB));
-  background-image: linear-gradient(to bottom left, #6644F6, #2467AB);
-}
-
-@media screen and (max-width: 800px) {
-  .partners .card#novalife {
-    margin-right: 0;
-    margin-top: 6em;
-  }
 }
 
 @-webkit-keyframes noise-anim {

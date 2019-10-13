@@ -1,21 +1,27 @@
 body
     background-image: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
     margin: 0
-    
+
+.content
+    margin-bottom: 5em
+    border-bottom-left-radius: 0.5em
+    border-bottom-right-radius: 0.5em
+
 .title
-    border-top-left-radius: 1em
-    border-top-right-radius: 1em
+    border-top-left-radius: 0.5em
+    border-top-right-radius: 0.5em
     height: 38em
     background-clip: cover
-    background-image: url('../img/exoly/SpaceVoidHighQuality.png')
+    background-image: url('../img/exoly/Fog-Valley.png')
     background-position: center
     background-size: 100%
-    flex-direction: column
+    flex-direction: column 
     align-items: center
     justify-content: center
 
     h1
         font-size: 8em
+        color: white
         font-family: Earthorbiter
         @media screen and (max-width: 800px)
             font-size: 6em
@@ -56,30 +62,6 @@ body
         span
             font-weight: 600
 
-.gallery
-    height: auto
-    justify-content: space-around
-    button
-        width: 25%
-        border-top-left-radius: 1em
-        border-top-right-radius: 1em
-        border-bottom-left-radius: 1em
-        border-bottom-right-radius: 1em
-        height: 3em
-        background: #303030
-        border: none
-        color: #ffffff
-        font-size: 1.5em
-        button-webkit-transition: all 0.5s
-        transition: all 0.5s
-        margin-top: 2em
-        margin-bottom: 2em 
-        outline: 0
-    button:hover
-        cursor: pointer
-        background: #ffffff
-        color: #303030
-
 .story
     background-color: transparentize(white, 0.97)
     height: auto
@@ -96,15 +78,6 @@ body
         @media screen and (max-width: 800px)
             display: none
         
-        &.trad
-            display: none
-            @media screen and (max-width: 800px)
-                display: block
-                width: 80%
-        // &.fr
-        //     background-color: transparentize(red, 0.8)
-        // &.en
-        //     background-color: transparentize(green, 0.8)
         h1
             font-size: 2em
             margin-bottom: 1em
@@ -125,10 +98,10 @@ body
     justify-content: space-around
     button
         width: 25%
-        border-top-left-radius: 1em
-        border-top-right-radius: 1em
-        border-bottom-left-radius: 1em
-        border-bottom-right-radius: 1em
+        border-top-left-radius: 0.2em
+        border-top-right-radius: 0.2em
+        border-bottom-left-radius: 0.2em
+        border-bottom-right-radius: 0.2em
         height: 3em
         background: #303030
         border: none

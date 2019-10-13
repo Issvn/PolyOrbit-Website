@@ -10,7 +10,6 @@
       flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
   padding: 3em;
   background: none;
   -webkit-box-shadow: none;
@@ -53,8 +52,8 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 4em;
-  width: 15em;
-  height: 15em;
+  width: 13em;
+  height: 13em;
   background-color: rgba(17, 17, 17, 0.8);
   -webkit-box-shadow: 0 1em 8em black;
           box-shadow: 0 1em 8em black;
@@ -71,6 +70,13 @@
   .content .card {
     width: 10em;
     height: 10em;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .content .card {
+    width: 15em;
+    height: 15em;
   }
 }
 

@@ -26,13 +26,13 @@
         <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/base.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/navbar.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/footer.min.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/index.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/glitch.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/index.min.css" />
         <!-- #endregion -->
     </head>
     <body>
         <!-- https://polyorbit.studio/dev-graveyard.txt -->
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <input type="checkbox" id="navbtn">
             <span></span>
             <span></span>
@@ -44,40 +44,35 @@
                 <li><a href="/team.html">TEAM</a></li>
                 <li><a href="/other.html">OTHER</a></li>
             </ul>
+        </div>        
+        <div id="parallax-container">
+            <div data-speed="11"><img src="assets/img/plx/layer0.png"></div>
+            <div data-speed="15"><img src="assets/img/plx/layer1.png"></div>
+            <div data-speed="25"><img src="assets/img/plx/layer2.png"></div>
+            <div data-speed="35"><img src="assets/img/plx/layer3.png"></div>
+            <div data-speed="40"><img src="assets/img/plx/layer4.png"></div>
+            <div data-speed="50"><img src="assets/img/plx/layer5.png"></div>
+            <div data-speed="30"><img src="assets/img/plx/layer6.png"></div>
         </div>
-        <div class="content">
-            <div class="head">
-                <h1>PolyOrbit Studio</h1>
-                <br>
-                <h2>A French Indie GameDev Studio</h2>
-            </div>
+        <div class="maincontainer">
             <div class="presentation">
-                <div class="fr">
-                    <h1>Présentation</h1>
-                    <h2><span>PolyOrbit</span> est un studio indépendant Bordelais, créé par Célian en 2017. L'équipe travaille actuellement sur Exoly, notre second jeux vidéo. Suivez-nous sur les réseaux sociaux pour des nouvelles croustillantes!</h2>
+                <div id="logo-container">
+                    <div class="logo">
+                        <img src="assets/img/logowt.png">
+                    </div>
                 </div>
-                <div class="en">
-                    <h1>Presentation</h1>
-                    <h2><span>PolyOrbit</span> is an independant studio from Bordeaux, founded by Célian in 2017. The team is currently working on Exoly, our second video game. Follow us on social networks for some spicy news!</h2>
-                </div>
-                <div class="trad">
-                    <h1>Presentation</h1>
-                    <h2><span>PolyOrbit</span> is an independant from Bordeaux studio ,founded by Célian in 2017. The team is currently working on Exoly, our second video game. Follow us on social networks for some spicy news!</h2>
-                </div>
+                <div id="jump" class="bg"></div>
+                <div id="text-container" class="bg">
+                    <div class="text">
+                        <div class="en">
+                            <h2><span>PolyOrbit</span> is an independant studio from Bordeaux, founded by Célian in 2017. The team is currently working on Exoly, our second video game. Follow us on social networks for some spicy news!</h2>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="exoly">
-                <h1 data-text="Exoly">Exoly</h1>
-                <p class="review-1">Youtubeur connu n°1: "....."</p>
-                <p class="review-2">Youtubeur connu n°2: "....."</p>
-                <p class="review-3">Youtubeur connu n°3: "....."</p>
-                <button onclick="window.location.href='/exoly.html'">Learn More</button>
-            </div>
-            <!-- <div class="partners">
-                <div class="title"><h1>Partners</h1></div>
-                   
-                </div>
-            </div> -->
         </div>
+
+        <div class="spacer"></div>
 
         <div class="footer">
             <p>Made by PolyOrbit Studio</p>
@@ -86,5 +81,19 @@
             </a>
             <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a></p>
         </div>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', () => {
+                let parent = document.getElementById('parallax-container');
+                let children = parent.getElementsByTagName('div');
+                var speed, ypos;
+                for(let i = 0; i < children.length; i++) {
+                    speed = children[i].getAttribute('data-speed');
+                    var yPos = (window.pageYOffset * speed / 100);
+                    
+                    children[i].style.transform = 'translateY(-' + yPos + 'px)';
+                }
+            }, false)
+        </script>
     </body>
 </html>

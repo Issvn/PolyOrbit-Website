@@ -1,0 +1,235 @@
+.navbar {
+  position: fixed;
+  width: 95%;
+  height: 5em;
+  background-color: #222;
+  -webkit-box-shadow: 0 1em 8em black;
+          box-shadow: 0 1em 8em black;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  z-index: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    width: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.navbar span {
+  display: none;
+  width: 2.5em;
+  height: 0.1em;
+  background-color: white;
+  position: absolute;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  z-index: 450;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar span {
+    display: block;
+  }
+}
+
+.navbar span:nth-of-type(1) {
+  top: 1.5em;
+}
+
+.navbar span:nth-of-type(3) {
+  bottom: 1.5em;
+}
+
+.navbar #navbtn {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar #navbtn {
+    width: 3em;
+    height: 3em;
+    opacity: 0;
+    display: block;
+    position: relative;
+    z-index: 451;
+  }
+  .navbar #navbtn:hover {
+    cursor: pointer;
+  }
+  .navbar #navbtn:checked ~ span:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translate(0.65em, 0.65em);
+            transform: rotate(45deg) translate(0.65em, 0.65em);
+  }
+  .navbar #navbtn:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .navbar #navbtn:checked ~ span:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(0.65em, -0.65em);
+            transform: rotate(-45deg) translate(0.65em, -0.65em);
+  }
+  .navbar #navbtn:checked ~ ul {
+    left: 0;
+  }
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar ul {
+    -webkit-transition: 0.5s left;
+    transition: 0.5s left;
+    z-index: 400;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.navbar ul li {
+  width: 22.5%;
+  display: table;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar ul li {
+    height: 5em;
+    width: 80%;
+  }
+}
+
+.navbar ul li#active a {
+  -webkit-animation: active 2s infinite;
+          animation: active 2s infinite;
+}
+
+.navbar ul li#logo {
+  background-color: #333;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-left-radius: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar ul li#logo {
+    background: none;
+  }
+}
+
+.navbar ul li#logo img {
+  width: 80%;
+  max-width: 5em;
+  height: auto;
+}
+
+.navbar ul li a {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Geo;
+  color: white;
+  font-size: 2em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar ul li a:hover {
+  -webkit-animation: text 1s infinite;
+          animation: text 1s infinite;
+}
+
+@-webkit-keyframes text {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #ff44eb;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes text {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #ff44eb;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes active {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #01b2ff;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes active {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #01b2ff;
+  }
+  100% {
+    color: white;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
