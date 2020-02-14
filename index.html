@@ -31,6 +31,9 @@
         <!-- #endregion -->
     </head>
     <body>
+        <div class="loader">
+            <img src="assets/img/logowt.png" alt="Loading ...">
+        </div>
         <!-- https://polyorbit.studio/dev-graveyard.txt -->
         <div class="navbar" id="navbar">
             <input type="checkbox" id="navbtn">
@@ -70,6 +73,13 @@
                     </div>
                 </div> 
             </div>
+            <!-- <div class="exoly">
+                <h1>Discover Exoly</h1>
+                <p class="review-1"></p>
+                <p class="review-2"></p>
+                <p class="review-3"></p>
+                <button type="button" onclick="window.open('exoly.html')">Read more about Exoly</button>
+            </div> -->
         </div>
 
         <div class="footer">
@@ -92,6 +102,10 @@
                     children[i].style.transform = 'translateY(-' + yPos + 'px)';
                 }
             }, false)
+            window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            })
         </script>
     </body>
 </html>
