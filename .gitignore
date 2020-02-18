@@ -1,7 +1,5 @@
-/assets/styles/*.css
+*.css
+*.css.map
+*.min.css.map
 
-/assets/styles/*.css.map
-
-/assets/styles/*.min.css
-
-.vscode/
+/.vscode
