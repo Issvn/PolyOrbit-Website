@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spaced - PolyOrbit Studio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/icon" href="assets/img/icon.ico" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Spaced - PolyOrbit Studio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/icon" href="assets/img/icon.ico" />
+        <meta name="description" content="PolyOrbit Studio's official website where you will find Exoly's blog and status of developpement" />
 
-    <meta name="description" content="PolyOrbit Studio's official website where you will find Exoly's blog and status of developpement" />
+        <!-- #region Meta Discord/Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@polyorbitstudio" />
+        <meta name="twitter:image" content="https://polyorbit.studio/assets/img/exoly/exonaut.png" />
 
-    <!-- #region Meta Discord/Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@polyorbitstudio" />
-    <meta name="twitter:image" content="https://polyorbit.studio/assets/img/exoly/exonaut.png" />
+        <meta property="og:title" content="PolyOrbit Studio" />
+        <meta property="og:image" content="https://polyorbit.studio/assets/img/exoly/exonaut.png" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:description" content="PolyOrbit Studio's official website" />
+        <!-- #endregion -->
+        <!-- #region STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/reset.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/font.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/base.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/navbar.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/footer.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/spaced.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/glitch.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <!-- #endregion -->
+    </head>
 
-    <meta property="og:title" content="PolyOrbit Studio" />
-    <meta property="og:image" content="https://polyorbit.studio/assets/img/exoly/exonaut.png" />
-    <meta property="og:image:width" content="1920" />
-    <meta property="og:image:height" content="1080" />
-    <meta property="og:description" content="PolyOrbit Studio's official website" />
-    <!-- #endregion -->
-    <!-- #region STYLESHEETS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/reset.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/font.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/base.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/navbar.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/footer.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/spaced.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/glitch.min.css" />
-    <!-- #endregion -->
-</head>
-
-<body>
-    <div class="loader">
-        <img src="assets/img/logowt.png" alt="Loading ...">
-    </div>
-    <div id="starbackground">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </div>
-    <!-- #region Navbar -->
-    <div class="navbar">
-        <input type="checkbox" id="navbtn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul>
-            <li id="logo"><img src="./assets/img/logowt.png" alt="PolyOrbit Studio Logo's"></li>
-            <li><a href="/">HOME</a></li>
-            <li id="active"><a href="/games.html">GAMES</a></liid="active">
-            <li><a href="/team.html">TEAM</a></li>
-            <li><a href="/other.html">OTHER</a></li>
-        </ul>
-    </div>
-    <!-- #endregion -->
-    <div class="content">
-        <div class="title">
-            <h1>Spaced</h1>
+    <body>
+        <div class="loader">
+            <img src="assets/img/logowt.png" alt="Loading ...">
         </div>
-        <div class="presentation">
-            <div class="fr">
-                <h2>
-                Vous vous retrouvez seuls dans la station spatiale internationale (ISS) après une explosion qui aura subitement tué le reste de l'équipage. Vos chances de survie dans la station étants faibles, vous allez devoir trouver un moyen de revenir sur terre mais toute communication étant impossible il faudra faire face au problème de taille que vous offrira le vide infini de l'espace !
-                </h2>
+        <div id="starbackground">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        <!-- #region Navbar -->
+        <div class="navbar">
+            <input type="checkbox" id="navbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul>
+                <li id="logo"><img src="./assets/img/logowt.png" alt="PolyOrbit Studio Logo's"></li>
+                <li><a href="/">HOME</a></li>
+                <li id="active"><a href="/games.html">GAMES</a></liid="active">
+                <li><a href="/team.html">TEAM</a></li>
+                <li><a href="/roadmap.html">ROADMAP</a></li>
+            </ul>
+        </div>
+        <!-- #endregion -->
+        <div class="content">
+            <div class="title">
+                <h1>Spaced</h1>
             </div>
-            <div class="en">
-                <h2>
-                After an explosion which has killed all the other crew members of the international space station (ISS), you are alone in the station and you have to find help to go back to the earth, but the infinite space void won't help you in this task.
-                </h2>
+            <div class="presentation">
+                <div class="fr">
+                    <h2>
+                    Vous vous retrouvez seuls dans la station spatiale internationale (ISS) après une explosion qui aura subitement tué le reste de l'équipage. Vos chances de survie dans la station étants faibles, vous allez devoir trouver un moyen de revenir sur terre mais toute communication étant impossible il faudra faire face au problème de taille que vous offrira le vide infini de l'espace !
+                    </h2>
+                </div>
+                <div class="en">
+                    <h2>
+                    After an explosion which has killed all the other crew members of the international space station (ISS), you are alone in the station and you have to find help to go back to the earth, but the infinite space void won't help you in this task.
+                    </h2>
+                </div>
+                <div class="trad">
+                    <h2>
+                    After an explosion which have killed all the other crew members of the international space station (ISS), you are alone in the station and you have to find help for go back to the earth, but the infinite space void will not help you in this task.
+                    </h2>
+                </div>
             </div>
-            <div class="trad">
-                <h2>
-                After an explosion which have killed all the other crew members of the international space station (ISS), you are alone in the station and you have to find help for go back to the earth, but the infinite space void will not help you in this task.
-                </h2>
+            <div class="video">
+                <iframe width="1250" height="500" src="https://www.youtube.com/embed/5lRd7AGjaOM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="player">
+                <div class="gamejolt">
+                    <img src="assets/img/gamejolt_button.png" onclick="window.open('https://gamejolt.com/games/Spaced/239759')">
+                </div>
             </div>
         </div>
-        <div class="video">
-            <iframe width="1250" height="500" src="https://www.youtube.com/embed/5lRd7AGjaOM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="player">
-            <div class="gamejolt">
-                <img src="assets/img/gamejolt_button.png" onclick="window.open('https://gamejolt.com/games/Spaced/239759')">
-            </div>
-        </div>
-    </div>
 
-    <script type="text/javascript">
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden";
-        })
-    </script>
-    <!-- #region Footer -->
-    <div class="footer">
-        <p>Made by PolyOrbit Studio</a></p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-            <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-        </a>
-        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a></p>
-    </div>
-    <!-- #endregion -->
-</body>
+        <script type="text/javascript">
+            window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            })
+        </script>
+        <!-- #region Footer -->
+        <div class="footer">
+            <p>Proudly made by PolyOrbit Studio</p>
+            <span></span>
+            <!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+            </a> -->
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a></p>
+            <div class="social">
+                <p>Follow PolyOrbit :</p>
+                <br>
+                <a href="https://twitter.com/PolyOrbitS"><i class="fab fa-twitter fa-2x fa-fw"></i></a>
+                <a href="https://www.youtube.com/channel/UCiIAizu1qI6s4eNvqCilRmQ/"><i class="fab fa-youtube fa-2x fa-fw"></i></a>
+                <a href="https://www.instagram.com/polyorbit_studio/"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+                <a href="https://discord.gg/polyorbitstudio"><i class="fab fa-discord fa-2x fa-fw"></i></a>
+            </div>
+        </div>
+        <!-- #endregion -->
+    </body>
 </html>

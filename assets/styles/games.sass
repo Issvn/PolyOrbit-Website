@@ -1,9 +1,13 @@
+html
+    overflow-y: hidden
+
 .content
     position: relative
     display: flex
     flex-direction: row
     flex-wrap: wrap
     width: 100%
+    height: 100%
     box-sizing: border-box
     padding: 3em
     background: none
@@ -20,8 +24,19 @@
         margin-top: 14.25em
         margin-bottom: 11.5em
     @media screen and (min-width: 1420px)
-        margin-top: 14em
-        margin-bottom: 12.9em
+        margin-top: 12em
+        margin-bottom: 14em
+    h1
+        position: absolute
+        top: 50%
+        left: 0
+        width: 100%
+        text-align: center
+        color: white
+        font-size: 40px
+        font-family: Earthorbiter
+
+
 
     .left, .right
         height: auto
@@ -30,33 +45,42 @@
         align-items: center
 
     .card
-        display: flex
-        margin-bottom: 4em
-        width: 13em
-        height: 13em
-        background-color: transparentize(#111, 0.2)
+        position: absolute 
+        font-family: Montserrat
         box-shadow: 0 1em 8em black
-        transition: all 0.5s
+        width: 400px
+        background-color: #222
+        box-sizing: border-box 
         align-items: center
         overflow: hidden
-        border-radius: 0.5em
-        @media screen and (max-width: 640px)
-            width: 10em
-            height: 10em
-        @media screen and (max-width: 1920px)
-            width: 15em
-            height: 15em
+        border-radius: 1em
+        // @media screen and (max-width: 640px)
+        //     width: 10em
+        //     height: 10em
+        // @media screen and (max-width: 1920px)
+        //     width: 15em
+        //     height: 15em
         
 
         &:last-child
             margin-bottom: 4em
         
-        .img
-            height: 100%
-            width: auto
-            img
-                height: 100%
-                width: auto
-        &:hover
-            transition: all 0.5s
-            transform: scale(1.1)
+        img 
+            height: 100% 
+            display: block 
+            width: 100% 
+        .card__body
+            display: flex
+            flex-direction: column
+            padding: 20px 
+            width: 85%
+        .card__title
+            margin-bottom: 10px
+            font-size: 22px 
+            color: white 
+            font-weight: bold 
+        .card__description 
+            color: white
+            text-align: justify
+            font-size: 14px 
+            line-height: 24px
