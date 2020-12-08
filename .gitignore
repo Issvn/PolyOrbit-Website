@@ -1,1 +1,3 @@
 /.vscode
+/assets/styles/*.min.css.map
+/assets/styles/*.sass

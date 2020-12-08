@@ -1,70 +1,97 @@
-
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="icon" href="favicon.ico">
-    <title>Card UI</title>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <title>Test Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <style type="text/css">
+      #box {
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: auto;
+        width: auto;
+        padding: 2em;
+        color: #333;
+        text-align: center;
+        overflow: visible;
+      }
 
-        body {
-        background-color: #d8e0e5; }
+      h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 3em;
+        line-height: 1.3em;
+        letter-spacing: -4px;
+        margin: 0.8rem 0 0 0;
+        padding-bottom: 5px;
+      }
 
-        .card {
-        position: absolute;
-        overflow: hidden;
-        font-size: 16px;
-        line-height: 1.4;
-        font-family: Open Sans;
-        box-sizing: border-box;
-        border-radius: 1em;
-        width: 390px;
-        background-color: #222;
-        }
-        img {
-            height: 100%;
-            display: block;
-            opacity: 1;
-            width: 100%;
-        }
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 1.65em;
+        margin: 0.6em auto 0.6em auto;
+        padding: 0;
+        width: 23em;
+      }
 
-        .card__body {
-        position: relative;
-        padding: 20px;
-        height: 150px; }
+      p.small {
+        font-size: 0.8em;
+      }
 
-        .card__title {
-        font-size: 22px;
-        color: white;
-        font-weight: bold; }
+      /***************************
+          Google Table CSS
+      ***************************/
 
-        .card__description {
-        position: absolute;
-        color: white;
-        font-size: 14px;
-        line-height: 27px;
-        opacity: 1;
-        }
+      .google-visualization-table-tr-even,
+      .google-visualization-table-tr-even td,
+      .google-visualization-table-tr-even-nonstrict {
+        background-color: #fff !important;
+        color: #333 !important;
+      }
 
+      .google-visualization-table-tr-odd,
+      .google-visualization-table-tr-odd td,
+      .google-visualization-table-tr-odd-nonstrict {
+        background-color: #fff !important;
+        color: #333 !important;
+      }
 
+      .google-visualization-table-td,
+      .google-visualization-table-th {
+        border: 1px solid #333 !important;
+        color: #fff !important;
+      }
+
+      .google-visualization-table-tr-head,
+      .google-visualization-table-tr-head td,
+      .google-visualization-table-tr-head-nonstrict {
+        background-color: #333 !important;
+        background-image: none !important;
+        color: #fff !important;
+      }
+
+      .google-visualization-table .gradient {
+        background-image: none !important;
+      }
     </style>
   </head>
 
-  <body>
-    <div class="card">
-        <img src="./assets/img/exoly/SpaceVoidHighQuality.png">
-        <div class="card__body">
-            <h2 class="card__title">Exoly</h2>
-            <p class="card__description">
-                Exoly, une aventure à couper le souffle dans laquelle vous pouvez explorer un univers multijoueur
-            </p>
-        </div>
+  <body id="background">
+    <div id="box">
+      <script src="./assets/scripts/google-sheets-html.js" type="text/javascript"></script>
+      <div id="table"></div>
     </div>
-
   </body>
 </html>
