@@ -19,6 +19,8 @@
             img
                 height: inherit
                 width: auto
+                width: auto
+                transform: scale(1.1)
         @media screen and (min-width: 1930px)
             height: auto
             width: 100%
@@ -45,7 +47,7 @@
     border-top-right-radius: 1em
     background-image: url('../img/plxplanets.png')
     background-position: center
-    background-size: 100%
+    background-size: 110%
     height: 40em 
     flex-direction: column
     position: relative
@@ -134,17 +136,24 @@
     // background-color: rgba(255, 255, 255, .1)
 
 .maincontainer
-    width: 120%
+    max-width: 80%
     height: auto
-    background-color: #222
     z-index: 1
     position: -webkit-sticky
     position: sticky
     top: 0
 
 .presentation
-    height: auto
+    height: 20em
+    border-radius: 1em
     text-align: center
+    border: 6px solid #222
+    background-image: url('../img/exoly/ExolyShot14.png')
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: top center
+    background-size: 100%;
+    margin-bottom: 50px
     @media screen and (max-width: 800px)
         height: 20em
     @media screen and (min-width: 800px)
@@ -152,22 +161,7 @@
     @media screen and (max-width: 360px)
         height: 25em
     @media screen and (min-width: 360px)
-        height: 30em
-
-    .bg
-        background-image: url('../img/exoly/ExolyShot14.png')
-        background-repeat: no-repeat
-        background-attachment: fixed
-        background-position: top center;
-        background-size: 100%;
-        @media screen and (max-width: 800px)
-            background-position-y: 50em
-        @media screen and (min-width: 800px)
-            background-position-y: 20em
-        @media screen and (min-width: 360px)
-            background-position-y: 15em
-        @media screen and (min-width: 1024px)
-            background-position-y: 15em
+        height: 20em
 
     #logo-container
         .logo
@@ -217,6 +211,75 @@
                 text-align: center
             span
                 font-weight: 600
+
+.exoly
+    position: relative
+    height: 40em
+    border: 6px solid #222
+    background-image: url('../img/exoly/ExolyShot16.png')
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: top center;
+    background-size: 100%;
+    flex-direction: column
+    border-radius: 1em
+    margin-bottom: 10em
+    @media screen and (max-width: 800px)
+        height: 20em
+        background-size: 200%
+    @media screen and (max-width: 1024px)
+        background-size: 200%
+
+    h1
+        text-align: center
+        margin-left: 3em
+        font-size: 5em
+        font-family: Montserrat
+        color: #ffffff
+        @media screen and (max-width: 800px)
+            margin-top: 0.5em
+            margin-left: 0.5em
+            font-size: 2em
+        @media screen and (max-width: 360px)
+            font-size: 3em
+        @media screen and (min-width: 1024px)
+            margin-left: 0.5em
+            padding-top: 1em
+
+    p
+        font-size: 1.8em
+        font-family: Montserrat
+        position: absolute
+        width: 25em
+        text-align: center
+        top: 50%
+        left: 50%
+        margin: 0
+        transform: translate(-50%, -50%);
+        color: #ffffff
+        
+    button
+        width: 14em
+        height: 2em
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: absolute
+        margin: 0
+        top: 90%
+        left: 50%
+        border: none
+        background: #333
+        font-family: SpaceMono
+        font-size: 1.5em
+        color: white
+        border-radius: 0.2em
+        transition: 0.5s all
+        transform: translate(-50%, -50%);
+        outline: 0
+
+        &:hover
+            cursor: pointer
 
 
 @keyframes noise-anim
